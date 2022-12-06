@@ -6,5 +6,10 @@
     class="videobox"
     autoplay="autoplay"
   ></video>
-  <p>{{ detectedGesture }}</p>
+  <p style="margin-left: 1470px;">{{ detectedGesture }}</p>
+  <div style="margin-left: 1450px;">
+    <button (click)="startDetection()">Start</button>
+    <button (click)="stopDetection()">Stop</button>
+  </div>
 </div>
+

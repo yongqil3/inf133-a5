@@ -1,5 +1,4 @@
-<app-header style="color: red;"></app-header>
-
+<header style="font-size: 60px;" >Movie Recommender</header>
 <app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
 
 <!-- <div class="horizontal">
@@ -10,12 +9,12 @@
   </li>
 </ul>
 </div> -->
-<div style="color:white;font-size:30px">Currently selected:</div>
+<div style="color:white;font-size:30px; margin-right: 90ch;">Currently selected:</div>
 <div style="color:orange;font-size:35px" [innerHTML]="currentBrowseType"></div>
 
  <div class="horizontal">
     <ng-container *ngFor="let browseType of browseTypes; let i = index">
-      <li style="color:rgb(255, 192, 198);font-size:35px">   {{ browseType }} </li>
+      <li style="color:whitesmoke;font-size:45px">   {{ browseType }} </li>
     </ng-container>
   </div>
 <!-- <ul class="list-group list-group-light">
@@ -37,9 +36,9 @@
 
 
 <div class="hand-commands">
-  <ul>
-    <li style="color:white;font-size:30px">Gesture Lists</li>
-    <li style="color:rgb(255, 192, 198);font-size:20px"><i>Hand Pointing Gesture-> </i> Next Browse Type</li>
+  <ul> 
+    <li style="color:white;font-size:30px;">Gesture Lists</li>
+    <li style="color:rgb(255, 192, 198);font-size:20px;"><i>Hand Pointing Gesture-> </i> Next Browse Type</li>
     <li style="color:rgb(255, 192, 198);font-size:20px"><i>Open Hand Gesture-> </i> Browse Movies of Current Browse Type</li>
     <li style="color:rgb(255, 192, 198);font-size:20px"><i>Open Hand and Closed Hand Gesture-> </i> Go to Favorite Movies</li>
   </ul>
